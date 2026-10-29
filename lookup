@@ -30,17 +30,17 @@ BOLD="$(tput bold)"             # Tagline
 GREEN="$(tput setaf 2)"         # Content File path.
 YELLOW="$(tput setaf 3)"        # Current page indicator color.
 BLUE="$(tput setaf 4)"          # Content Title.
-WHITE="$(tput setaf 7)"		# Script tagline, stats, content, and page numbers.
+WHITE="$(tput setaf 7)"		      # Script tagline, stats, content, and page numbers.
 NORM="$(tput setaf 9)"          # Reset to default color.
 
-start=0				# CPU Start Time
-finish=0			# CPU Finish/Stop Time
-delta=0				# CPU Time for search.
+start=0				                  # CPU Start Time
+finish=0			                  # CPU Finish/Stop Time
+delta=0				                  # CPU Time for search.
 
-files=0				# Total files found containing match.
-results=0			# Total number of matches.
+files=0				                  # Total files found containing match.
+results=0			                  # Total number of matches.
 
-valid_keys=""			# Search keys which have hits.
+valid_keys=""			              # Search keys which have hits.
 
 declare -a stop_words=( a able about across after all almost also am among an and any are as at be \
                         because been but by can cannot could did do does either else ever every \
@@ -52,7 +52,7 @@ declare -a stop_words=( a able about across after all almost also am among an an
                         will with would yet you your )
 
 tput civis                      # Make the cursor invisible.
-cd "$path"			# Run all commands from archive path.
+cd "$path"			                # Run all commands from archive path.
 
 # ------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
 
@@ -163,7 +163,7 @@ Search ()
                     echo $filename
                 fi
 
-                if [ $sum -gt $depth ]; then            # Limit the number of hits.
+                if [ $sum -gt $depth ]; then       # Limit the number of hits.
                     break
                 fi
             done`"
@@ -177,7 +177,7 @@ Search ()
         shift
         key="$1"
 
-        >&2 echo -n "."					# show progress during search.
+        >&2 echo -n "."					                   # show progress during search.
     done
 
     # No match was found with any key. Update user and exit.
@@ -203,7 +203,7 @@ Search ()
     rm pass1.dat 
 
     while (( $# > 0 )); do
-        >&2 echo -n "."					# show progress during search.
+        >&2 echo -n "."					                   # show progress during search.
 
         # Throw out any keys which are stop words, to reduce false hits.
         if stop_word $key; then
@@ -324,19 +324,6 @@ Search ()
                 else {
                   file = $1; ndx = $2; keys = $3; hit = 1; } }' > pass2.dat  
 
-#        END   { if (hit == 1)
-#                  # Count the number of key hits.
-#                  count = 0;
-#                  key_list ="";
-#
-#                  for (i=1; i <= n; i++)
-#                    if (index(keys, master[i]) == 0)
-#                      key_list = sprintf("%s %s", key_list, master[i]);
-#                    else
-#                      count++;
-#
-#                  printf("%d %s %6d%s\n", count, file, ndx, key_list); }' > pass2.dat
-
     cp pass2.dat pass1.dat
 
     >&2 echo -e "Sorting results..."
@@ -394,7 +381,8 @@ cleanupText ()
     # Delete last blank line, to avoid double blank line at bottom of content.
     # Required to avoid loosing last line of text.
 
-    sed 's///' | \
+    sed 's/
+//' | \
     sed '/^--$/,$ d' | \
     sed '/^---$/,$ d' | \
     awk 'NF {p=1} p' | \
@@ -490,8 +478,6 @@ bulletAlign ()
             segment = pos1 + width - offset;
             pos2 = 0;
 
-# printf("%d %d %d %d %d\n", indent, segment, pos1, width, offset);
-
             # Locate last space separator within segment,
             # to determine segment bounderies as defined
             # by pos1 to pos2.
@@ -513,9 +499,6 @@ bulletAlign ()
             # the bullet using offset variable.
 
             printf "%s%s\n", substr(spaces,1,offset), substr($0, pos1, pos2 - pos1 + 1);
-
-# printf "----|----1----|----2----|----3----|----4----|----5----|----6----|----7-\n";
-# printf "%d,%d,%d\n", pos1, pos2, lineLength;
 
             # Remove any leading spaces from beginning of
             # next line to maintain left alightment.
@@ -785,4 +768,3 @@ Results
 #   Navigation_Footer
 #   User_Input
 #   Display_Detail
-
