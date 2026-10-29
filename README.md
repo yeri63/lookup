@@ -1,4 +1,4 @@
-# Lookup
+# lookup.sh
 
 ![Screenshot of Lookup](https://github.com/yeri63/lookup/blob/master/lookup.png)
 
