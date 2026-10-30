@@ -46,18 +46,22 @@ dailylog-2026-10.txt
 
 <p>To use lookup, just enter one or more keywords after the lookup command. Use more keywords to narrow down the search to fewer hits. Otherwise, you'll end up with a large list to review. The order of keywords is critical, ie. the results will be all articles containing keyword1, and from those results, all articles containing keyword2, etc. You also have the option to search for all articles not containing a keyword by attaching a "-" in front of that word.</p>
 
-## Reviewing Hits and Selecting Article to Open
+## Scanning Hits and Selecting Article to View
 
-<p>The hits are displayed as a list of numbered results. Each hit will show the date, filename, line number, and a short 2-3 line excerpt containing the keyword(s). Below this list, on the bottom edge of the screen is the list of pages of hit results. The height of the terminal window determines how many results are shown per page, which then determines the number if pages. To advance to the next pages of hits, press the <spacebar>, press the letter "b" to go back, or "q" to quit and exit.</p>
-<p>To open up a result for review, enter the number next to it. Once inside, press the letter "n" to go to the next keyword instance within the article, or "p" to go back to the previous one. Use the up and down arrow to move one line up or down, and "q" to quit and return to the current page of search results.</p>
+<p>The hits are displayed as a list of numbered results. Each hit will show the date, filename, keyword hit line number, and a short 2-3 line excerpt containing one or more keywords. Below this list, on the bottom edge of the screen is the list of pages of hit results. The height of the terminal window determines how many results are shown per page, which then determines the number of pages. To advance to the next page of hits, press the <code>&lt;spacebar&gt;</code>, press <code>b</code> to go back, or <code>q</code> to quit and exit.</p>
+<p>To open up a result to view, enter the number next to it. Once inside, press the letter <code>n</code> to go to the next keyword instance, or <code>p</code> to go back to the previous one. Use the <code>&uparrow;</code> and <code>&downarrow;</code> to move one line up or down, and <code>q</code> to quit and return to the current page of search results.</p>
 <div align="center">
 
-Location | Key | Action
-:-- | :-- | :--
-Search Results | <space> | Next Page
-Search Results | "p" | Prev Page
-Search Results | "q" | Quit and Exit
-Viewing Article | "n" | Next Keyword Hit
-Viewing Article | "p" | Prev Keyword Hit
-Viewing Article | "q" | Quit and Return
+Mode | Key | Action
+:--: | :--: | :--:
+List | <#> | Open Article
+List | \<spacebar> | Next Page
+List | "p" | Prev Page
+List | "q" | Quit and Exit
+<space> | <space> | <space>
+View | "n" | Next Keyword Hit
+View | "p" | Prev Keyword Hit
+View | \<up> | Prev Line
+View | \<down> | Next Line
+View | "q" | Quit and Return
 </div>
