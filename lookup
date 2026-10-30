@@ -34,13 +34,13 @@ WHITE="$(tput setaf 7)"		      # Script tagline, stats, content, and page number
 NORM="$(tput setaf 9)"          # Reset to default color.
 
 start=0				                  # CPU Start Time
-finish=0			                  # CPU Finish/Stop Time
-delta=0				                  # CPU Time for search.
+finish=0                        # CPU Finish/Stop Time
+delta=0	                        # CPU Time for search.
 
 files=0				                  # Total files found containing match.
-results=0			                  # Total number of matches.
+results=0                       # Total number of matches.
 
-valid_keys=""			              # Search keys which have hits.
+valid_keys=""                   # Search keys which have hits.
 
 declare -a stop_words=( a able about across after all almost also am among an and any are as at be \
                         because been but by can cannot could did do does either else ever every \
@@ -52,7 +52,7 @@ declare -a stop_words=( a able about across after all almost also am among an an
                         will with would yet you your )
 
 tput civis                      # Make the cursor invisible.
-cd "$path"			                # Run all commands from archive path.
+cd "$path"                      # Run all commands from archive path.
 
 # ------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
 
