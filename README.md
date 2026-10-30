@@ -54,14 +54,14 @@ dailylog-2026-10.txt
 
 Mode | Key | Action
 :--: | :--: | :--:
-List | <#> | Open Article
+List | <code>#</code> | Open Article
 List | \<spacebar> | Next Page
-List | "p" | Prev Page
-List | "q" | Quit and Exit
+List | <code>p</code> | Prev Page
+List | <code>q</code> | Quit and Exit
 <space> | <space> | <space>
-View | "n" | Next Keyword Hit
-View | "p" | Prev Keyword Hit
-View | \<up> | Prev Line
-View | \<down> | Next Line
-View | "q" | Quit and Return
+View | <code>n</code> | Next Keyword Hit
+View | <code>p</code> | Prev Keyword Hit
+View | <code>&uparrow;</code> | Prev Line
+View | <code>&downarrow;</code> | Next Line
+View | <code>q</code> | Quit and Return
 </div>
