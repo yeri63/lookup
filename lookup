@@ -30,14 +30,14 @@ BOLD="$(tput bold)"             # Tagline
 GREEN="$(tput setaf 2)"         # Content File path.
 YELLOW="$(tput setaf 3)"        # Current page indicator color.
 BLUE="$(tput setaf 4)"          # Content Title.
-WHITE="$(tput setaf 7)"		      # Script tagline, stats, content, and page numbers.
+WHITE="$(tput setaf 7)"	        # Script tagline, stats, content, and page numbers.
 NORM="$(tput setaf 9)"          # Reset to default color.
 
-start=0				                  # CPU Start Time
+start=0   	                    # CPU Start Time
 finish=0                        # CPU Finish/Stop Time
 delta=0	                        # CPU Time for search.
 
-files=0				                  # Total files found containing match.
+files=0                         # Total files found containing match.
 results=0                       # Total number of matches.
 
 valid_keys=""                   # Search keys which have hits.
