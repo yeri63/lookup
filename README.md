@@ -1,4 +1,4 @@
-# lookup.sh
+# lookup
 
 ![Screenshot of Lookup](https://github.com/yeri63/lookup/blob/master/lookup.png)
 
@@ -13,7 +13,7 @@
 <p>Now that I found a way to quickly search through a text file, the next step was considering how to organize it. Putting everything into one increasingly large file seemed risky, especially if the file got corrupted or accidentally deleted. I needed to break this down into smaller, manageable pieces, but not so small as to generate thousands of files. I wanted to keep track of when the notes were made, so thought of keeping a monthly log, with daily markers to identify the date of each entry. Using this method, only 12 files would be needed to record a years worth of data, which seemed like a reasonable trade off.</p>
 <p>The last step was designing an easy way to lookup my information, without resorting linux searches and filters every time. It had to be quick, and easy to use, much like Google, when searching through vast troves if information, generating results in less than a second. This was the key which lead to creation a text version of Google, where each search would accept multiple terms, and present results to the user, in a format similar to Google, a list of links, each followed by a brief excerpt, in reverse date order. Instead of webpages, the results brought back my data, visible in a scrolling text window on the terminal screen.</p>
 
-## File Structure:
+## File Structure
 
 * Create a folder titled Dailylog in the Documents folder. This will contain all of the files with the data to be saved and searched. Create a file for the current month, using the format "dailylog-yyyy--mm.txt".
 * This will be a Linux, not Windows ASCII text file, using LF instead of CR/LF at the end of every line. Content is stored and retrieved as articles, and article sections. An article can contain multiple sections, or none. All date, article and section markers should be entered between 2 blank lines, to help the search engine parse content.
@@ -42,3 +42,22 @@ dailylog-2026-10.txt
 
     --
   
+## How to Search
+
+<p>To use lookup, just enter one or more keywords after the lookup command. Use more keywords to narrow down the search to fewer hits. Otherwise, you'll end up with a large list to review. The order of keywords is critical, ie. the results will be all articles containing keyword1, and from those results, all articles containing keyword2, etc. You also have the option to search for all articles not containing a keyword by attaching a "-" in front of that word.</p>
+
+## Reviewing Hits and Selecting Article to Open
+
+<p>The hits are displayed as a list of numbered results. Each hit will show the date, filename, line number, and a short 2-3 line excerpt containing the keyword(s). Below this list, on the bottom edge of the screen is the list of pages of hit results. The height of the terminal window determines how many results are shown per page, which then determines the number if pages. To advance to the next pages of hits, press the <spacebar>, press the letter "b" to go back, or "q" to quit and exit.</p>
+<p>To open up a result for review, enter the number next to it. Once inside, press the letter "n" to go to the next keyword instance within the article, or "p" to go back to the previous one. Use the up and down arrow to move one line up or down, and "q" to quit and return to the current page of search results.</p>
+<div align="center">
+
+Location | Key | Action
+:-- | :-- | :--
+Search Results | <space> | Next Page
+Search Results | "p" | Prev Page
+Search Results | "q" | Quit and Exit
+Viewing Article | "n" | Next Keyword Hit
+Viewing Article | "p" | Prev Keyword Hit
+Viewing Article | "q" | Quit and Return
+</div>
