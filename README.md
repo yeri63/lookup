@@ -44,7 +44,7 @@ dailylog-2026-10.txt
   
 ## How to Search
 
-<p>To use lookup, just enter one or more keywords after the lookup command. Use more keywords to narrow down the search to fewer hits. Otherwise, you'll end up with a large list to review. The order of keywords is critical, ie. the results will be all articles containing keyword1, and from those results, all articles containing keyword2, etc. You also have the option to search for all articles not containing a keyword by attaching a "-" in front of that word.</p>
+<p>To perform a search, enter one or more keywords after the lookup command. Use more keywords to narrow down the number of hits, otherwise you'll end up with a large list to review. The order of keywords is critical, ie. the results will be all articles containing keyword1, and from those results, all articles containing keyword2, etc. You also have the option to search for all articles not containing a keyword by attaching a "-" in front of that word.</p>
 
 ## Scanning Hits and Selecting Article to View
 
