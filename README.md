@@ -55,7 +55,7 @@ dailylog-2026-10.txt
 Mode | Key | Action
 :--: | :--: | :--:
 List | <code>#</code> | Open Article
-List | \<spacebar> | Next Page
+List | <code>&lt;spacebar&gt;</code> | Next Page
 List | <code>p</code> | Prev Page
 List | <code>q</code> | Quit and Exit
 <space> | <space> | <space>
