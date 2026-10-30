@@ -23,7 +23,7 @@ dailylog-2026-10.txt
 
     Mon, 05-Oct-2026
 
-    Article 1 content
+    Article 1 content, Section 1
     line 2
     line 3
 
