@@ -2,11 +2,11 @@
 
 ![Screenshot of Lookup](https://github.com/yeri63/lookup/blob/master/lookup.png)
 
-<p>This project was created to solve a problem, that writing notes down in a Moleskin notebook couldn't quite solve. The paper solution was very compact and convenient, drop resistant, and free from batteries or having to recharge. I used the following  method to record information for latter retrieval, described below...</p>
+<p>This project was created to solve a problem, that writing notes down in a Moleskin notebook couldn't quite solve. The paper solution was very compact and convenient, drop resistant, and free from batteries or having to recharge. Here’s how I used to use this medium to record and retrieve information...</p>
 
-* Reserved pages at the beginning to create a Table of Contents. Actual notes were recorded between 3-5 pages in.
-* Wrote page numbers at the bottom of every page, to help quickly locate those pages with the data I needed to recall.
-* Updated the Table of Contents for every project, one line per project, noting the individual pages with that information.
+* Reserved pages at the beginning for a Table of Contents. Actual notes were recorded between 3-5 pages in.
+* Wrote page numbers at the bottom of every page, to help quickly locate page with the data I needed to recall.
+* Updated the Table of Contents for major  project, one line per project, noting the individual pages with that information.
   
 <p>This method worked, but was slow. When the notebook was full, another had to be purchased, requiring more notebooks to be scanned. This would take longer as the number of notebooks increased. Another issue was recording multiple commands, results, procedures, or troubleshooting steps. Writing these by hand was painfully slow, inefficient, and error prone. There had to be a quicker way, both to record and retrieve.</p>
 <p>The next evolution came as I become more proficient in Linux, using vi for creating scripts and keeping notes. Typing was much faster, letting me easily record scripts, command output, develop and record procedures, etc. using cut&paste. I was able to collect reports, take meeting notes, record names and contact information, etc. Basically all the stuff I used to record before, but now at a much faster rate and larger scale. The best part, was that it was all easily searchable, using basic linux commands like grep, sed, more, less, and awk for more complex tasks.</p>
