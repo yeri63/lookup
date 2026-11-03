@@ -1,7 +1,8 @@
-00# lookup
-
+# lookup
+<div align="center">
+  
 ![Screenshot of Lookup](https://github.com/yeri63/lookup/blob/master/lookup.png)
-
+</div>
 <p>This project was created to solve a problem, that writing notes down in a Moleskin notebook couldn't quite solve. The paper solution was very compact and convenient, drop resistant, and free from batteries or having to recharge. To facilitate my ability to quickly locate notes long after they were recorded, I incorporated the following structure...</p>
 
 * Reserved pages at the beginning for a Table of Contents. Actual notes were recorded between 3-5 pages in.
