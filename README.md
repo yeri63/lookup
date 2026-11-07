@@ -16,7 +16,7 @@
 
 ## File Structure
 
-* Create a folder titled DailyLog in the Documents folder. This will contain all of the files with the data to be saved and searched. Create a file for the current month, using the format "dailylog-yyyy--mm.txt".
+* Create a folder “DailyLog” in the Documents folder. This will contain all of the files with the data to be saved and searched. Create a file for the current month, using the format "dailylog-yyyy--mm.txt".
 * This will be a Linux, not Windows ASCII text file, using LF instead of CR/LF at the end of every line. Content is stored and retrieved as articles, and article sections. An article can contain multiple sections, or none. All date, article and section markers should be entered between 2 blank lines, to help the search engine parse content.
 * The first line in the file should contain the date of the first entry, using the format "Www, dd-Mmm-yyyy. Separate articles on the same date with a line beginning with 2 dashes, ie. "--". Separate sections within the same article with a line beginning with 3 dashes, ie. "---". Before adding articles on a new day, add a date marker. The last article of the month must end with a line with beginning with 2 dashes, ie. "--".
 
