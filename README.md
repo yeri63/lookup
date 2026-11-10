@@ -22,7 +22,7 @@
 
 dailylog-2026-10.txt
 
-    Mon, 05-Oct-2026
+    Mon, 05-Oct-2026.
 
     Article 1 content, Section 1
     line 2
@@ -34,7 +34,7 @@ dailylog-2026-10.txt
     line 2
     line 3
 
-    Tue, 06-Oct-2026
+    Tue, 06-Oct-2026.
     
     Article 2 content
     line 2
